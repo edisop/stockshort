@@ -60,7 +60,7 @@ from modal import Function, App
 # Config / Secrets
 # -----------------------------
 APP_INFER = os.getenv("MODAL_APP_INFER", "inmemory-latest-infer-short")
-APP_PLANS = os.getenv("MODAL_APP_PLANS", "inmemory-latest-plans-short")
+APP_PLANS = os.getenv("MODAL_APP_PLANS", "")
 
 CKPT_PATH   = os.getenv("CKPT_PATH", "/vol/models/ckpts/biex_listmle_final.pt")
 TOP_K       = int(os.getenv("TOP_K", "20"))
